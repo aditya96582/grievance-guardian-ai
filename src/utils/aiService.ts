@@ -121,7 +121,7 @@ export const getAISuggestions = async (grievance: Grievance): Promise<string[]> 
   }
   
   if (grievance.sentiment === 'positive') {
-    suggestions.push('This is positive feedback. Consider acknowledging the citizen's appreciation.');
+    suggestions.push("This is positive feedback. Consider acknowledging the citizen's appreciation.");
   }
   
   return suggestions;
