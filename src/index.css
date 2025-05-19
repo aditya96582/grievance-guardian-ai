@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 214 89% 52%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-primary: 214 89% 52%;
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -97,5 +91,39 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .priority-critical {
+    @apply bg-red-100 text-red-800 border-red-300;
+  }
+  
+  .priority-high {
+    @apply bg-orange-100 text-orange-800 border-orange-300;
+  }
+  
+  .priority-medium {
+    @apply bg-yellow-100 text-yellow-800 border-yellow-300;
+  }
+  
+  .priority-low {
+    @apply bg-green-100 text-green-800 border-green-300;
+  }
+  
+  .status-open {
+    @apply bg-blue-100 text-blue-800 border-blue-300;
+  }
+  
+  .status-processing {
+    @apply bg-purple-100 text-purple-800 border-purple-300;
+  }
+  
+  .status-resolved {
+    @apply bg-green-100 text-green-800 border-green-300;
+  }
+  
+  .status-closed {
+    @apply bg-gray-100 text-gray-800 border-gray-300;
   }
 }
